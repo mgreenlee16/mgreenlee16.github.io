@@ -26,7 +26,9 @@ author:
   location         : "West Lafayette, Indiana"
   employer         : "Purdue University"
   uri              :
-  email            : "greenle0@purdue.edu"
+  email            : "greenle0@purdue.edu"   # professional email
+  email_personal   : "michaelogreenlee@icloud.com"
+  phone            : "5743096554"             # digits only; shown as (574) 309-6554
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
@@ -61,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "michael-greenlee-aae"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -120,7 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
