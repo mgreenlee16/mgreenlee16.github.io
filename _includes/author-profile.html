@@ -34,10 +34,10 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i><span>{{ author.email | replace: "@", "<wbr>@" }}</span></a></li>
+        <li><a href="mailto:{{ author.email }}" title="{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Professional</a></li>
       {% endif %}
       {% if author.email_personal %}
-        <li><a href="mailto:{{ author.email_personal }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i><span>{{ author.email_personal | replace: "@", "<wbr>@" }}</span></a></li>
+        <li><a href="mailto:{{ author.email_personal }}" title="{{ author.email_personal }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Personal</a></li>
       {% endif %}
       {% if author.phone %}
         {% assign phone = author.phone | remove: "-" | remove: " " | remove: "(" | remove: ")" %}
