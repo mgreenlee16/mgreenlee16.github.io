@@ -18,7 +18,7 @@ redirect_from:
 ## Education
 
 **Purdue University**, West Lafayette, IN  
-B.S. in Aerospace Engineering, Management, and Mathematics, expected May 2028
+B.S. in Aerospace Engineering, Management, and Mathematics, expected December 2027
 
 ## Research Experience
 
