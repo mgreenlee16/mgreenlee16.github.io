@@ -9,9 +9,9 @@ order: 3
 **Role:** Injector design; head of manufacturing for my subteam  
 **Skills:** Liquid rocket propulsion, design for manufacturing
 
-I spent a year with PURPL working on the design of a **turbopump-fed rocket engine**.
+I spent a year with PURPL working on the design of a turbopump-fed rocket engine.
 
 ## What I did
 
-- **Injector plate design.** I contributed to the design of the engine's injector plate.
-- **Head of manufacturing for my subteam.** I made sure our design could actually be built with the manufacturing capabilities available at Purdue, bridging the gap between design intent and what the shop could produce.
+- Contributed to the design of the engine's injector plate.
+- Served as head of manufacturing for my subteam, making sure our design could actually be built with the manufacturing capabilities available at Purdue and bridging the gap between design intent and what the shop could produce.

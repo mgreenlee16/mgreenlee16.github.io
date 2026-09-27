@@ -9,9 +9,9 @@ order: 4
 **Program:** The Data Mine at Purdue  
 **Skills:** Technical literature review, technical writing, teamwork
 
-Through **The Data Mine** at Purdue, I worked on a corporate partnership with **Stratolaunch**.
+Through The Data Mine at Purdue, I worked on a corporate partnership with Stratolaunch.
 
 ## What I did
 
 - Analyzed complex research completed by Purdue professors.
-- Worked with two other undergraduates to condense several high-level research papers into **technical deliverables for Stratolaunch employees**.
+- Worked with two other undergraduates to condense several high-level research papers into technical deliverables for Stratolaunch employees.
