@@ -19,7 +19,7 @@ repository               : "mgreenlee16/mgreenlee16.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Michael Greenlee"
   pronouns         :
   bio              : "Aerospace Engineering undergraduate researching hypersonic boundary-layer transition at Purdue's BAM6QT wind tunnel. Seeking a Summer 2027 internship in hypersonics."

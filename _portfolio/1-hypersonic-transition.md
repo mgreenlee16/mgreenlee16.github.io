@@ -22,6 +22,11 @@ Real vehicle surfaces are not held at a single uniform temperature. This project
 - Post-processed and compared results with **MATLAB** scripts and **Tecplot** visualizations.
 - Presented the results at the [2026 Purdue Summer Undergraduate Research Symposium](/talks/2026-07-30-purdue-surf).
 
+<figure class="photo">
+  <img src="/images/surf-2026-presentation.jpg" alt="Michael Greenlee standing next to a screen showing his presentation title, Impact of Varying Wall Temperature on Hypersonic Boundary-Layer Transition" loading="lazy">
+  <figcaption>Presenting at the 2026 Purdue Summer Undergraduate Research Symposium.</figcaption>
+</figure>
+
 ## Wind tunnel work
 
 I am also an assistant in the **Boeing/AFOSR Mach-6 Quiet Tunnel (BAM6QT)**, and I am working toward certification to run future experiments.

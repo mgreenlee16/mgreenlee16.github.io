@@ -42,6 +42,11 @@ Determining where the boundary layer transitions from laminar to turbulent is cr
 
 I run computational simulations in the Stability and Transition Analysis for Hypersonic Boundary Layers (STABL) software suite, which uses DPLR2D for mean-flow analysis and PSE-Chem for stability analysis. I analyze the results with MATLAB codes and Tecplot visualizations. I am also an assistant in the BAM6QT wind tunnel, working toward certification for future experiments. I presented this work at the [2026 Purdue Summer Undergraduate Research Symposium](/talks/2026-07-30-purdue-surf).
 
+<figure class="photo">
+  <img src="/images/surf-2026-presentation.jpg" alt="Michael Greenlee standing next to a screen showing his presentation title, Impact of Varying Wall Temperature on Hypersonic Boundary-Layer Transition" loading="lazy">
+  <figcaption>Presenting at the 2026 Purdue Summer Undergraduate Research Symposium.</figcaption>
+</figure>
+
 I also partnered with Stratolaunch through The Data Mine at Purdue, where I analyzed complex research completed by Purdue professors. With two other undergraduates, I condensed several high-level research papers into technical deliverables for Stratolaunch employees.
 
 ## Design Experience
