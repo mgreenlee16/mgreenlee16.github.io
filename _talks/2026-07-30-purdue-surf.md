@@ -1,16 +1,16 @@
 ---
-title: "Effect of Non-Uniform Wall Temperature on Predicted Hypersonic Boundary-Layer Transition"
+title: "Impact of Varying Wall Temperature on Hypersonic Boundary-Layer Transition"
 collection: talks
 type: "Talk"
 permalink: /talks/2026-07-30-purdue-surf
 venue: "Purdue Summer Undergraduate Research Symposium"
 date: 2026-07-30
 location: "West Lafayette, Indiana"
-excerpt: "Computational study on a sharp cone of how non-uniform wall temperature affects predicted hypersonic boundary-layer transition, using STABL with PSE-Chem."
+excerpt: "My first research talk: a computational study on a sharp cone of how varying wall temperature affects hypersonic boundary-layer transition, using STABL with PSE-Chem."
 ---
 
-I presented results from a computational study on a sharp cone in hypersonic flight, examining how
-non-uniform wall temperature distributions affect the predicted boundary-layer transition location.
+My first research talk. I presented results from a computational study on a sharp cone in hypersonic flight,
+examining how varying wall temperature distributions affect boundary-layer transition.
 The analysis used the STABL suite with PSE-Chem stability analysis.
 
 <figure class="photo">

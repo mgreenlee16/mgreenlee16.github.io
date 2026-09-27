@@ -24,7 +24,8 @@ B.S. in Aerospace Engineering, Management, and Mathematics, expected December 20
 
 **Undergraduate Researcher, Hypersonic Boundary-Layer Transition**  
 *Aerospace Sciences Laboratory, Purdue University (Advisor: Prof. Brandon Chynoweth)*
-* Study how non-uniform wall temperature profiles affect boundary-layer stability and predicted transition on a sharp cone in hypersonic flight
+* Investigating how varying wall temperature affects the hypersonic boundary layer as a whole on a flared cone geometry, connecting STABL computations to physical experiments in the BAM6QT
+* Completed a study of how varying wall temperature affects boundary-layer transition on a sharp cone; presented at the 2026 Purdue Summer Undergraduate Research Symposium
 * Run mean-flow (DPLR2D) and stability (PSE-Chem) analyses in the STABL software suite, and post-process results with MATLAB and Tecplot
 * Assistant in the Boeing/AFOSR Mach-6 Quiet Tunnel (BAM6QT), working toward certification for future experiments
 
