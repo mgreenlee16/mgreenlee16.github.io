@@ -1,5 +1,5 @@
 ---
-title: "Wall Temperature Effects on Hypersonic Boundary Layers"
+title: "Impact of Varying Wall Temperature on Hypersonic Boundary Layers"
 excerpt: "Undergraduate research at Purdue's Aerospace Sciences Laboratory on how varying wall temperature affects hypersonic boundary layers. Completed and presented a sharp cone transition study; now extending the work to a flared cone, pairing STABL computations with BAM6QT wind tunnel experiments.<br/>**Tools:** STABL, DPLR2D, PSE-Chem, MATLAB, Tecplot"
 collection: portfolio
 order: 1
