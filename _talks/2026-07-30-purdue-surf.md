@@ -13,4 +13,9 @@ I presented results from a computational study on a sharp cone in hypersonic fli
 non-uniform wall temperature distributions affect the predicted boundary-layer transition location.
 The analysis used the STABL suite with PSE-Chem stability analysis.
 
+<figure class="photo">
+  <img src="/images/surf-2026-presentation.jpg" alt="Michael Greenlee standing next to a screen showing his presentation title, Impact of Varying Wall Temperature on Hypersonic Boundary-Layer Transition" loading="lazy">
+  <figcaption>Presenting at the 2026 Purdue Summer Undergraduate Research Symposium.</figcaption>
+</figure>
+
 [Read more about this project](/projects/1-hypersonic-transition/)

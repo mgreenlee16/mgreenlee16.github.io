@@ -10,6 +10,11 @@ order: 2
 
 I am a lead in a student club that is designing and building an unmanned aerial vehicle around a **pulsejet engine**.
 
+<figure class="photo">
+  <img src="/images/pulsejet-uav-cad.jpg" alt="CAD model of the pulsejet UAV: slender fuselage, straight wings, twin vertical tails, and the pulsejet engine mounted above the rear fuselage" loading="lazy">
+  <figcaption>Early CAD concept of the pulsejet UAV airframe.</figcaption>
+</figure>
+
 ## What I do
 
 - **Lead the aerodynamics team.** I teach newer undergraduates the full design workflow, from first principles to a model that is ready for analysis.
