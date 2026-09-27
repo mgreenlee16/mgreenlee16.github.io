@@ -1,0 +1,49 @@
+/* ==========================================================================
+    AERO THEME - LIGHT VERSION (navy and gold)
+    ========================================================================== */
+/* Color codes used for the theme */
+$primary-color              : #1b3a5c;
+$accent-color               : #a8832a;
+$gray                       : #6b7580;
+$dark-gray                  : #2b3440;
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 88%);
+
+/* Color codes used for the site */
+$danger-color               : #c0392b;
+$info-color                 : #1b3a5c;
+$notice-color               : #6b7580;
+$success-color              : #2e7d4f;
+$warning-color              : #c98a12;
+
+/* Other basic settings for the template */
+$border-radius              : 6px;
+$box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.08);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-accent-color               : #{$accent-color};
+    --global-bg-color                   : #ffffff;
+    --global-card-bg-color              : #f5f7fa;
+    --global-footer-bg-color            : #f2f4f7;
+    --global-border-color               : #{$lighter-gray};
+    --global-dark-border-color          : #c5cbd2;
+    --global-code-background-color      : #f5f7fa;
+    --global-code-text-color            : #{$dark-gray};
+    --global-fig-caption-color          : #{$gray};
+    --global-link-color                 : #1d5c96;
+    --global-link-color-hover           : #{$primary-color};
+    --global-link-color-visited         : #1d5c96;
+    --global-masthead-link-color        : #{$dark-gray};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$dark-gray};
+    --global-text-color-light           : #{$gray};
+    --global-thead-color                : #{$lighter-gray};
+}

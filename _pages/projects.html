@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+redirect_from:
+  - /portfolio/
+---
+
+{% include base_path %}
+
+<p class="page__lead">Research and engineering design work, from hypersonic stability analysis to building flight hardware.</p>
+
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}
+  {% include archive-single.html %}
+{% endfor %}

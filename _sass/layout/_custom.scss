@@ -1,0 +1,156 @@
+/* ==========================================================================
+   CUSTOM SITE STYLES
+   Uses the CSS variables from the active theme so light and dark mode both work.
+   ========================================================================== */
+
+body {
+  font-family: "Inter", $sans-serif;
+}
+
+/* Thin gold rule under the top navigation */
+.masthead {
+  border-bottom: 3px solid var(--global-accent-color, var(--global-base-color));
+}
+
+.masthead__menu-item a,
+.site-title {
+  font-weight: 600;
+}
+
+/* Page titles and section headings */
+.page__title {
+  color: var(--global-base-color);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.page__content h2,
+.archive > h2:not(.archive__item-title) {
+  color: var(--global-base-color);
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0.35em;
+  margin-top: 1.75em;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.5em;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--global-accent-color, var(--global-base-color));
+  }
+}
+
+.page__lead {
+  color: var(--global-text-color-light);
+  font-size: 1.05em;
+  margin-bottom: 1.5em;
+}
+
+/* Callout box on the home page */
+.page__content .notice--primary {
+  font-size: 0.95em !important;
+  color: var(--global-text-color);
+  background-color: var(--global-card-bg-color, var(--global-code-background-color));
+  border-left: 4px solid var(--global-accent-color, var(--global-base-color));
+  box-shadow: none;
+  padding: 1em 1.25em;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin-top: 0.6em;
+    margin-right: 0.4em;
+  }
+}
+
+/* Buttons: readable text on the gold base color in dark mode */
+html[data-theme="dark"] .btn:not(.btn--inverse) {
+  color: #131c26 !important;
+}
+
+.btn--inverse:hover {
+  background-color: var(--global-base-color);
+}
+
+html[data-theme="dark"] .btn--inverse:hover {
+  color: #131c26 !important;
+}
+
+/* "At a glance" cards on the home page */
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75em;
+  margin: 1.5em 0 0.5em;
+
+  @include breakpoint($small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.highlight {
+  padding: 0.85em 1em;
+  border: 1px solid var(--global-border-color);
+  border-top: 3px solid var(--global-base-color);
+  border-radius: $border-radius;
+  background-color: var(--global-card-bg-color, var(--global-bg-color));
+  font-size: 0.9em;
+  line-height: 1.45;
+
+  p {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  strong {
+    color: var(--global-base-color);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.8em;
+  }
+}
+
+/* Project and talk listings as cards */
+.archive .list__item .archive__item {
+  padding: 1em 1.25em;
+  margin-bottom: 1em;
+  border: 1px solid var(--global-border-color);
+  border-left: 4px solid var(--global-base-color);
+  border-radius: $border-radius;
+  background-color: var(--global-card-bg-color, var(--global-bg-color));
+  transition: $global-transition;
+
+  &:hover {
+    border-left-color: var(--global-accent-color, var(--global-base-color));
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    font-size: 1.15em;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* The CV's presentation list reuses those cards; keep it compact there */
+.archive ul .list__item .archive__item {
+  padding: 0.75em 1em;
+
+  li {
+    list-style: none;
+  }
+}

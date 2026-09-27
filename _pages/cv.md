@@ -9,56 +9,61 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<!-- To offer a downloadable resume: add your PDF as files/Greenlee_Resume.pdf, then uncomment the next line. -->
+<!-- <a href="{{ base_path }}/files/Greenlee_Resume.pdf" class="btn btn--primary"><i class="fas fa-download"></i> Download resume (PDF)</a> -->
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**Seeking:** Summer 2027 internship in defense, preferably hypersonics  
+**Citizenship:** U.S. citizen, eligible for a security clearance
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**Purdue University**, West Lafayette, IN  
+B.S. in Aerospace Engineering, Management, and Mathematics, expected May 2028
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Research Experience
+
+**Undergraduate Researcher, Hypersonic Boundary-Layer Transition**  
+*Aerospace Sciences Laboratory, Purdue University (Advisor: Prof. Brandon Chynoweth)*
+* Study how non-uniform wall temperature profiles affect boundary-layer stability and predicted transition on a sharp cone in hypersonic flight
+* Run mean-flow (DPLR2D) and stability (PSE-Chem) analyses in the STABL software suite, and post-process results with MATLAB and Tecplot
+* Assistant in the Boeing/AFOSR Mach-6 Quiet Tunnel (BAM6QT), working toward certification for future experiments
+
+**Industry Research Partnership: Stratolaunch**  
+*The Data Mine, Purdue University*
+* Analyzed complex research by Purdue faculty and, with two other undergraduates, condensed several high-level research papers into technical deliverables for Stratolaunch employees
+
+## Engineering Design Experience
+
+**Aerodynamics Lead, Pulsejet UAV**  
+*Student club, Purdue University*
+* Lead the aerodynamics team designing a UAV airframe around a pulsejet engine
+* Teach newer undergraduates the workflow from conceptual design to CAD model to CFD analysis
+
+**Injector Design and Subteam Manufacturing Head, Turbopump Rocket Engine**  
+*Purdue Undergraduate Rocket Propulsion Laboratory (PURPL)*
+* Worked on the injector plate design for a turbopump-fed rocket engine
+* Served as head of manufacturing for the subteam, making sure the design could be built with Purdue's manufacturing capabilities
+
+## Teaching
+
+**Undergraduate Tutor**, Purdue University
+* Tutor undergraduates in subjects ranging from partial differential equations to real analysis
+
+## Presentations
+
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}</ul>
+
+## Technical Skills
+
+* **Hypersonics and CFD:** STABL, DPLR2D, PSE-Chem, CFD analysis, wind tunnel operations (BAM6QT)
+* **Analysis and visualization:** MATLAB, Tecplot
+* **Design:** CAD modeling, conceptual aircraft design, design for manufacturing
+
+## Independent Study
+
+Self-directed study of hypersonics beyond coursework:
+* J. D. Anderson, *Hypersonic and High-Temperature Gas Dynamics* (completed)
+* J. J. Bertin, *Hypersonic Aerothermodynamics* (completed)
+* E. H. Hirschel and C. Weiland, *Selected Aerothermodynamic Design Problems of Hypersonic Flight Vehicles* (in progress)

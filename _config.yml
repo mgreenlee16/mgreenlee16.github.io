@@ -6,10 +6,10 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
-site_theme               : "contrast"
+site_theme               : "aero"
 title                    : "Michael Greenlee"
 name                     : &name "Michael Greenlee"
-description              : &description "Aerospace engineering undergraduate at Purdue interested in defense and hypersonics."
+description              : &description "Michael Greenlee: aerospace engineering undergraduate at Purdue researching hypersonic boundary-layer transition. Seeking a Summer 2027 internship in defense and hypersonics."
 url                      : https://mgreenlee16.github.io
 baseurl                  : ""
 repository               : "mgreenlee16/mgreenlee16.github.io"
@@ -22,7 +22,7 @@ author:
   avatar           : "profile.png"
   name             : "Michael Greenlee"
   pronouns         :
-  bio              : "Undergraduate researcher in hypersonic boundary-layer transition in the BAM6QT wind-tunnel at Purdue. Looking for a Summer 2027 internship in hypersonics."
+  bio              : "Aerospace Engineering undergraduate researching hypersonic boundary-layer transition at Purdue's BAM6QT wind tunnel. Seeking a Summer 2027 internship in hypersonics."
   location         : "West Lafayette, Indiana"
   employer         : "Purdue University"
   uri              :
@@ -139,18 +139,18 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Person
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -224,7 +224,7 @@ collections:
     permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -275,8 +275,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comment: true
+      share: false
   # _talks
   - scope:
       path: ""

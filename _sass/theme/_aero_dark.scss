@@ -1,0 +1,57 @@
+/* ==========================================================================
+    AERO THEME - DARK VERSION (navy and gold)
+    ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #d9bb6c;
+$accent-color               : #d9bb6c;
+$gray                       : #8b95a1;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+
+$background                 : #131c26;
+$background-light           : #1c2835;
+$background-lighter         : #243344;
+$text                       : #e4e8ed;
+$link                       : #8cc1f0;
+$link-dark                  : mix(#fff, $link, 30%);
+$link-light                 : $link;
+
+/* Color codes used for the site */
+$danger-color               : #e5675c;
+$info-color                 : #8cc1f0;
+$notice-color               : #8b95a1;
+$success-color              : #5cbf85;
+$warning-color              : #e0a93b;
+
+/* Other basic settings for the template */
+$border-radius              : 6px;
+$box-shadow                 : 0 1px 3px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-accent-color               : #{$accent-color};
+    --global-bg-color                   : #{$background};
+    --global-card-bg-color              : #{$background-light};
+    --global-footer-bg-color            : #0f161e;
+    --global-border-color               : #{$background-lighter};
+    --global-dark-border-color          : #33455a;
+    --global-code-background-color      : #{$background-light};
+    --global-code-text-color            : #{$text};
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #b5bec8;
+    --global-thead-color                : #{$background-lighter};
+}
