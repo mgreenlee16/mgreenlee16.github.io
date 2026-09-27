@@ -1,13 +1,13 @@
 ---
 title: "Wall Temperature Effects on Hypersonic Boundary Layers"
-excerpt: "Undergraduate research at Purdue's Aerospace Sciences Laboratory on how varying wall temperature affects hypersonic boundary layers. Completed and presented a sharp cone transition study; now extending the work to a flared cone.<br/>**Tools:** STABL, DPLR2D, PSE-Chem, MATLAB, Tecplot"
+excerpt: "Undergraduate research at Purdue's Aerospace Sciences Laboratory on how varying wall temperature affects hypersonic boundary layers. Completed and presented a sharp cone transition study; now extending the work to a flared cone, pairing STABL computations with BAM6QT wind tunnel experiments.<br/>**Tools:** STABL, DPLR2D, PSE-Chem, MATLAB, Tecplot"
 collection: portfolio
 order: 1
 ---
 
 **Where:** Aerospace Sciences Laboratory, Purdue University  
 **Advisor:** Prof. Brandon Chynoweth  
-**Tools:** STABL, DPLR2D, PSE-Chem, MATLAB, Tecplot
+**Tools:** STABL, DPLR2D, PSE-Chem, MATLAB, Tecplot, BAM6QT wind tunnel
 
 ## The problem
 
@@ -18,6 +18,9 @@ Real vehicle surfaces are not held at a single uniform temperature. My research 
 ## Current work: flared cone
 
 I am now investigating how varying wall temperature affects **the boundary layer as a whole**, not only the transition location, using a **flared cone** geometry.
+
+- Running computational analyses of the flared cone in **STABL**.
+- Connecting the computations to **physical experiments in the BAM6QT**, so the predictions can be compared with wind tunnel measurements.
 
 ## First study: sharp cone
 
