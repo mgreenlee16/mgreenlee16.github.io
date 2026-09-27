@@ -154,3 +154,26 @@ html[data-theme="dark"] .btn--inverse:hover {
     list-style: none;
   }
 }
+
+/* Let long email addresses wrap in the desktop sidebar instead of being cut off */
+.author__urls li {
+  @include breakpoint($large) {
+    white-space: normal;
+  }
+}
+
+.author__urls a {
+  @include breakpoint($large) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+/* Mobile "Contact" popup: size to its content so emails stay on one line */
+.author__urls {
+  width: max-content;
+
+  @include breakpoint($large) {
+    width: auto;
+  }
+}
