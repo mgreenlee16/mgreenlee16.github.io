@@ -11,8 +11,8 @@ redirect_from:
 I'm a junior in Aerospace Engineering, Management, and Mathematics at Purdue. I conduct research in hypersonics at the Aerospace Sciences Laboratory with the BAM6QT wind tunnel as the only undergraduate, lead the airframe design for a UAV built around a pulsejet, and tutor undergraduates in subjects from partial differential equations to real analysis.
 
 <div class="notice--primary" markdown="1">
-**Seeking a Summer 2027 internship in defense.**  
-Open to any role in defense, with a particular interest in hypersonics. U.S. citizen, eligible for a security clearance.  
+**Seeking a Summer 2027 internship in defense / hypersonics.**  
+U.S. citizen, eligible for a security clearance.  
 [View my CV](/cv/){: .btn .btn--primary .btn--small} [Email me](mailto:greenle0@purdue.edu){: .btn .btn--inverse .btn--small}
 </div>
 

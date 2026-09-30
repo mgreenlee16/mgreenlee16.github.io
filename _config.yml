@@ -9,7 +9,7 @@
 site_theme               : "aero"
 title                    : "Michael Greenlee"
 name                     : &name "Michael Greenlee"
-description              : &description "Michael Greenlee: aerospace engineering undergraduate at Purdue researching hypersonic boundary-layer transition. Seeking a Summer 2027 internship in defense, open to any role, with a particular interest in hypersonics."
+description              : &description "Michael Greenlee: aerospace engineering undergraduate at Purdue researching hypersonic boundary-layer transition. Seeking a Summer 2027 internship in defense / hypersonics."
 url                      : https://mgreenlee16.github.io
 baseurl                  : ""
 repository               : "mgreenlee16/mgreenlee16.github.io"
@@ -22,7 +22,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Michael Greenlee"
   pronouns         :
-  bio              : "Aerospace Engineering undergraduate researching hypersonic boundary-layer transition at Purdue's BAM6QT wind tunnel. Seeking a Summer 2027 internship in defense; open to any defense role, especially hypersonics."
+  bio              : "Aerospace Engineering undergraduate researching hypersonic boundary-layer transition at Purdue's BAM6QT wind tunnel. Seeking a Summer 2027 internship in defense / hypersonics."
   location         : "West Lafayette, Indiana"
   employer         : "Purdue University"
   uri              :
