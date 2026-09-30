@@ -12,7 +12,7 @@ redirect_from:
 <!-- To offer a downloadable resume: add your PDF as files/Greenlee_Resume.pdf, then uncomment the next line. -->
 <!-- <a href="{{ base_path }}/files/Greenlee_Resume.pdf" class="btn btn--primary"><i class="fas fa-download"></i> Download resume (PDF)</a> -->
 
-**Seeking:** Summer 2027 internship in defense, preferably hypersonics  
+**Seeking:** Summer 2027 internship in defense; open to any defense role, with a particular interest in hypersonics  
 **Citizenship:** U.S. citizen, eligible for a security clearance
 
 ## Education
