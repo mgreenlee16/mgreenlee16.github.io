@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------
+# 15-minute Opening Range Breakout (ORB) settings
+# Every rule of the strategy lives here, so you can change how the bot
+# trades without touching the code. Times are US/Eastern (New York).
+# ---------------------------------------------------------------
+
+# Stocks/ETFs to watch. Liquid names with tight spreads work best.
+symbols: [SPY, QQQ, AAPL, NVDA, TSLA, AMD, META, MSFT]
+
+# --- The opening range ---
+opening_range_minutes: 15        # 9:30-9:45 high/low becomes the range
+
+# --- Entry ---
+# Size of the candle that has to CLOSE outside the range to trigger an entry.
+# 5 = wait for a 5-minute candle to close above/below the range.
+# 1 = enter on the first 1-minute close outside the range (faster, more fakeouts).
+signal_timeframe_minutes: 5
+direction: both                  # both | long | short
+last_entry_time: "11:30"         # no new trades after this time
+
+# Skip a stock if its opening range is too tight or too wide,
+# as a % of price. 0 / 100 effectively turns the filter off.
+min_range_pct: 0.0
+max_range_pct: 100.0
+
+# --- Exit ---
+# Where the stop loss goes:
+#   opposite = other side of the range (long: range low; short: range high)
+#   midpoint = middle of the range
+#   candle   = low (long) / high (short) of the breakout candle
+stop_mode: opposite
+reward_risk: 2.0                 # profit target = 2x the risk (2R)
+flatten_time: "15:55"            # close everything before the bell
+
+# --- Risk management ---
+risk_per_trade_pct: 1.0          # lose at most 1% of the account if stopped out
+max_position_pct: 25.0           # never put more than 25% of the account in one trade
+max_trades_per_day: 3            # across all symbols (one trade per symbol per day)
+daily_loss_limit_pct: 3.0        # stop opening trades after losing 3% in a day
+
+# --- Data ---
+# iex = free real-time feed (fine for paper trading).
+# sip = full-market feed; on the free plan it works for backtests (older data).
+live_data_feed: iex
+backtest_data_feed: sip
+
+# --- Backtest only ---
+starting_equity: 100000
+slippage_pct: 0.02               # 0.02% worse fill on every entry and exit

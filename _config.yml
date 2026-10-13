@@ -188,6 +188,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - trading-bot
   - vendor
 keep_files:
   - .git
