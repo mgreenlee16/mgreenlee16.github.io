@@ -8,20 +8,32 @@ you can see how the strategy would have done before trusting it.
 
 ## The strategy (default settings)
 
+The defaults are the "base strategy" from the ORB videos this bot was built from:
+
 | Rule | Default | Setting in `config.yaml` |
 |---|---|---|
-| Opening range | High/low of 9:30–9:45 ET | `opening_range_minutes` |
-| Entry trigger | A **5-minute candle closes** above the range high (long) or below the range low (short) | `signal_timeframe_minutes`, `direction` |
-| Entry | Market order right after that candle closes | – |
-| Stop loss | Other side of the range | `stop_mode` (`opposite` / `midpoint` / `candle`) |
-| Profit target | 2× the risk (2R) | `reward_risk` |
-| Late cutoff | No new trades after 11:30 | `last_entry_time` |
+| Opening range | High/low (wicks included) of the 9:30–9:45 ET candle | `opening_range_minutes` |
+| Entry trigger | A **15-minute candle closes** above the range high. A wick through the range doesn't count | `signal_timeframe_minutes` |
+| Entry | Market order at the open of the next candle | – |
+| Direction | **Long only**. Shorts lost money in the 5-year S&P 500 test | `direction` (`long` / `short` / `both`) |
+| Stop loss | Bottom of the range | `stop_mode` (`opposite` / `midpoint` / `candle`) |
+| Profit target | 1.5× the risk (1.5R) | `reward_risk` |
+| Late cutoff | No new trades after 11:30 (6–7 candles inside the range = choppy day) | `last_entry_time` |
 | End of day | Close everything at 15:55 | `flatten_time` |
-| Size | Risk 1% of the account per trade, max 25% of account in one position | `risk_per_trade_pct`, `max_position_pct` |
-| Limits | 1 trade per stock per day, 3 trades per day total, stop after −3% day | `max_trades_per_day`, `daily_loss_limit_pct` |
-| Range filter | Off | `min_range_pct`, `max_range_pct` |
+| What it trades | SPY and QQQ | `symbols` |
+| Size | Risk 1% of the account per trade | `risk_per_trade_pct`, `max_position_pct` |
+| Limits | 1 trade per symbol per day, stop after a −3% day | `max_trades_per_day`, `daily_loss_limit_pct` |
 
-Change any of these in `config.yaml`; you don't need to edit code.
+Optional filters from the videos (off by default, so you can backtest them on vs. off):
+
+| Filter | Idea | Setting |
+|---|---|---|
+| Range size | Skip days when the opening range is too tight or too wide | `min_range_pct`, `max_range_pct` |
+| Trend | Only go long when the stock is in an uptrend (yesterday's close above its N-day average). This is the fix for fakeouts suggested in the "most traders lose with ORB" video | `trend_filter_days` (e.g. 20) |
+
+Not automated: the discretionary parts, like reading lower highs/lower lows to
+exit early, fading the range edges on choppy days, re-entering after a fakeout,
+or Fibonacci levels. A trailing stop could be added later.
 
 ## One-time setup
 
@@ -83,6 +95,24 @@ The backtest is deliberately conservative: it fills you on the next minute's
 open plus slippage, and if a single minute touches both your stop and your
 target, it counts the stop.
 
+## Compare timeframes and targets (the video's experiment)
+
+```bash
+python run.py compare --start 2020-01-01 --end 2025-12-31
+```
+
+This reruns the backtest for 1-, 5- and 15-minute entry candles × targets of
+1.0R–3.0R, for longs and for shorts (30 runs, about 5–10 minutes), and prints
+one table. It's the same experiment as the timeframe video, which found:
+15-min worked best at 1.5R, 5-min at 2.0R, 1-min at 2.5R, and shorts lost
+money. Your table will show whether that holds on SPY/QQQ after slippage. To
+use a different combination, change `signal_timeframe_minutes` and
+`reward_risk` in `config.yaml`.
+
+Expect your numbers to differ from the video's. Its returns (like 75% a year)
+probably come from a leveraged S&P 500 product with no trading costs. This bot
+trades SPY/QQQ shares and charges slippage on every fill.
+
 ## Paper trade live
 
 ```bash
@@ -92,7 +122,7 @@ python run.py live
 Start it any time before 9:30 ET on a trading day and leave the terminal open.
 It will:
 1. Wait for the open, then record the 9:30–9:45 range.
-2. Check every minute for a 5-minute candle closing outside the range.
+2. Check every minute for a finished 15-minute candle (10:00, 10:15, ...) that closed outside the range.
 3. Send a **bracket order** (entry + stop + target together), so the stop and
    target live at Alpaca even if your computer goes to sleep.
 4. Close everything at 15:55.

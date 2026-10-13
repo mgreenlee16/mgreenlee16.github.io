@@ -74,3 +74,21 @@ def load_backtest_bars(client, symbols, start: str, end: str, feed: str) -> dict
         for symbol in set(missing) - set(fetched):
             print(f"  warning: no data returned for {symbol}")
     return bars
+
+
+def fetch_daily_closes(client, symbols, start: datetime, end: datetime, feed: str) -> dict:
+    """Daily closing prices, {symbol: Series indexed by date}. Used by the trend filter."""
+    req = StockBarsRequest(
+        symbol_or_symbols=list(symbols),
+        timeframe=TimeFrame.Day,
+        start=start,
+        end=end,
+        feed=DataFeed(feed),
+        adjustment=Adjustment.SPLIT,
+    )
+    df = client.get_stock_bars(req).df
+    if df.empty:
+        return {}
+    df = df.reset_index()
+    df["date"] = pd.to_datetime(df["timestamp"], utc=True).dt.tz_convert(NY).dt.date
+    return {sym: g.set_index("date")["close"].sort_index() for sym, g in df.groupby("symbol")}

@@ -19,17 +19,18 @@ def _parse_time(value) -> time:
 class Config:
     symbols: list
     opening_range_minutes: int = 15
-    signal_timeframe_minutes: int = 5
-    direction: str = "both"
+    signal_timeframe_minutes: int = 15
+    direction: str = "long"
     last_entry_time: time = time(11, 30)
     min_range_pct: float = 0.0
     max_range_pct: float = 100.0
+    trend_filter_days: int = 0
     stop_mode: str = "opposite"
-    reward_risk: float = 2.0
+    reward_risk: float = 1.5
     flatten_time: time = time(15, 55)
     risk_per_trade_pct: float = 1.0
-    max_position_pct: float = 25.0
-    max_trades_per_day: int = 3
+    max_position_pct: float = 100.0
+    max_trades_per_day: int = 2
     daily_loss_limit_pct: float = 3.0
     live_data_feed: str = "iex"
     backtest_data_feed: str = "sip"

@@ -65,13 +65,33 @@ def signal_candles(day_bars: pd.DataFrame, cfg: Config) -> pd.DataFrame:
     return candles.dropna(subset=["close"])
 
 
-def find_signal(symbol: str, day_bars: pd.DataFrame, cfg: Config, now: datetime | None = None):
+def trend_bias(daily_closes: pd.Series, n_days: int):
+    """Higher-timeframe trend going into today: "up" if the last daily close is
+    above its n-day average, "down" if below, None if there isn't enough history.
+    `daily_closes` must only contain days BEFORE the day being traded."""
+    if n_days <= 0 or daily_closes is None or len(daily_closes) < n_days:
+        return None
+    last = daily_closes.iloc[-1]
+    return "up" if last > daily_closes.iloc[-n_days:].mean() else "down"
+
+
+def find_signal(symbol: str, day_bars: pd.DataFrame, cfg: Config,
+                now: datetime | None = None, bias: str | None = None):
     """Return the first breakout Signal of the day, or None.
 
     `now` is the current time in live trading; only candles that have fully
     closed by `now` are looked at. In a backtest leave it as None.
+    `bias` is the trend_bias() for this symbol; only used when the trend
+    filter is on (trend_filter_days > 0).
     """
     if day_bars.empty:
+        return None
+    allow_long = cfg.direction in ("both", "long")
+    allow_short = cfg.direction in ("both", "short")
+    if cfg.trend_filter_days > 0:
+        allow_long = allow_long and bias == "up"
+        allow_short = allow_short and bias == "down"
+    if not (allow_long or allow_short):
         return None
     or_end = session_open(day_bars) + timedelta(minutes=cfg.opening_range_minutes)
     if now is not None and now < or_end:
@@ -96,11 +116,13 @@ def find_signal(symbol: str, day_bars: pd.DataFrame, cfg: Config, now: datetime 
             break
 
         side = None
-        if c["close"] > high and cfg.direction in ("both", "long"):
+        if c["close"] > high:
             side = "long"
-        elif c["close"] < low and cfg.direction in ("both", "short"):
+        elif c["close"] < low:
             side = "short"
         if side is None:
+            continue
+        if (side == "long" and not allow_long) or (side == "short" and not allow_short):
             continue
 
         entry = float(c["close"])

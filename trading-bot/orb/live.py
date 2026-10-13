@@ -17,8 +17,8 @@ from alpaca.trading.requests import (GetOrdersRequest, MarketOrderRequest, StopL
                                      TakeProfitRequest)
 
 from .config import Config
-from .data import api_keys, fetch_minute_bars, make_data_client
-from .strategy import MARKET_OPEN, find_signal, position_size
+from .data import api_keys, fetch_daily_closes, fetch_minute_bars, make_data_client
+from .strategy import MARKET_OPEN, find_signal, position_size, trend_bias
 
 NY = ZoneInfo("America/New_York")
 # Ignore a breakout if the bot only notices it this long after the candle closed
@@ -49,6 +49,7 @@ class LiveTrader:
         self.done_symbols: set[str] = set()   # traded or skipped for the day
         self.trades_today = 0
         self.flattened = False
+        self.bias: dict[str, str | None] = {}
 
     # ---------- daily state ----------
     def _new_day(self, today):
@@ -56,6 +57,7 @@ class LiveTrader:
         self.done_symbols = set()
         self.trades_today = 0
         self.flattened = False
+        self.bias = {}
         # If the bot was restarted mid-day, don't re-trade symbols it already traded.
         session_start = datetime.combine(today, MARKET_OPEN, NY)
         orders = self.trading.get_orders(GetOrdersRequest(
@@ -65,6 +67,18 @@ class LiveTrader:
         self.trades_today = len(traded)
         log.info("New trading day %s. Watching %s. Already traded: %s",
                  today, ", ".join(self.cfg.symbols), ", ".join(sorted(traded)) or "none")
+        if self.cfg.trend_filter_days > 0:
+            n = self.cfg.trend_filter_days
+            closes = fetch_daily_closes(self.data, self.cfg.symbols,
+                                        session_start - timedelta(days=n * 2 + 10),
+                                        session_start - timedelta(hours=9), self.cfg.live_data_feed)
+            for sym in self.cfg.symbols:
+                series = closes.get(sym)
+                if series is not None:
+                    series = series[series.index < today]
+                self.bias[sym] = trend_bias(series, n)
+            log.info("Trend (%d-day average): %s", n,
+                     ", ".join(f"{s} {b or 'unknown'}" for s, b in self.bias.items()))
 
     def _daily_loss_hit(self) -> bool:
         acct = self.trading.get_account()
@@ -144,7 +158,7 @@ class LiveTrader:
                 continue
             # Only use fully finished 1-minute bars.
             day_bars = day_bars[day_bars.index + timedelta(minutes=1) <= now]
-            sig = find_signal(symbol, day_bars, self.cfg, now=now)
+            sig = find_signal(symbol, day_bars, self.cfg, now=now, bias=self.bias.get(symbol))
             if sig is None:
                 continue
             self.done_symbols.add(symbol)
