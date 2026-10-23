@@ -71,7 +71,7 @@ Self-directed study of hypersonics beyond coursework:
 * J. J. Bertin, *Hypersonic Aerothermodynamics* (completed)
 * E. H. Hirschel and C. Weiland, *Selected Aerothermodynamic Design Problems of Hypersonic Flight Vehicles* (in progress)
 
-**Relevant Coursework** (*in progress, Fall 2026; †planned, Spring 2027)
+## Relevant Coursework** (*in progress, Fall 2026; †planned, Spring 2027)
 * **Aerodynamics and fluids:** Fluid Mechanics with Lab; Aerodynamics with Lab*; Intermediate Aerodynamics (AAE 514, graduate)†; Experimental Aerodynamics (AAE 520, graduate)†
 * **Propulsion and thermal:** Aerospace Propulsion Foundations*; Thermodynamics I
 * **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Control System Analysis†
