@@ -23,11 +23,11 @@ M.S. in Aeronautics and Astronautics, expected May 2030
 GPA: 3.96 / 4.00; Dean's List and Semester Honors every semester
 
 **Relevant Coursework** (*in progress, Fall 2026; †planned, Spring 2027)
-* **Aerodynamics and fluids:** Fluid Mechanics with Lab; Aerodynamics with Lab*; Intro to Aerodynamics (AAE 514, graduate)†; Experimental Aerodynamics (AAE 520, graduate)†
+* **Aerodynamics and fluids:** Fluid Mechanics with Lab; Aerodynamics with Lab*; Intermediate Aerodynamics (AAE 514, graduate)†; Experimental Aerodynamics (AAE 520, graduate)†
 * **Propulsion and thermal:** Aerospace Propulsion Foundations*; Thermodynamics I
-* **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Controls†
+* **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Control System Analysis†
 * **Design:** Introduction to Aerospace Design
-* **Mathematics:** Linear Algebra; Differential Equations; Introduction to Proof and Real Analysis; Real Analysis†; Probability and Statistics in Engineering*
+* **Mathematics:** Linear Algebra; Differential Equations; Introduction to Proof and Real Analysis; Foundations of Analysis†; Probability and Statistics in Engineering*
 * **Computing and signals:** C Programming; Signal Analysis for Aerospace Engineering*
 
 ## Research Experience
