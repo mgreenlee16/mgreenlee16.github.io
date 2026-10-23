@@ -18,8 +18,8 @@ redirect_from:
 ## Education
 
 **Purdue University**, West Lafayette, IN  
-B.S. in Aerospace Engineering, Management, and Mathematics, expected December 2027
-M.S. in Aeronautics and Astronautics, expected May 2030
+*B.S. in Aerospace Engineering, Management, and Mathematics, expected December 2027
+*M.S. in Aeronautics and Astronautics, expected May 2030
 ## Research Experience
 
 **Undergraduate Researcher, Hypersonic Boundary-Layer Transition**  
