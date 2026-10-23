@@ -77,6 +77,6 @@ Self-directed study of hypersonics beyond coursework:
 * **Propulsion and thermal:** Aerospace Propulsion Foundations*; Thermodynamics I
 * **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Control System Analysis†
 * **Design:** Introduction to Aerospace Design
-* **Mathematics:** Linear Algebra; Differential Equations; Introduction to Proof and Real Analysis; Foundations of Analysis†; Probability and Statistics in Engineering*
+* **Mathematics:** Linear Algebra; Ordinary and Partial Differential Equations; Introduction to Proof and Real Analysis; Foundations of Analysis†; Probability and Statistics in Engineering*
 * **Computing and signals:** C Programming; Signal Analysis for Aerospace Engineering*
 
