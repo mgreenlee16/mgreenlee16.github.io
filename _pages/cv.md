@@ -22,14 +22,6 @@ B.S. in Aerospace Engineering, Management, and Mathematics, expected December 20
 M.S. in Aeronautics and Astronautics, expected May 2030  
 GPA: 3.96 / 4.00; Dean's List and Semester Honors every semester
 
-**Relevant Coursework** (*in progress, Fall 2026; †planned, Spring 2027)
-* **Aerodynamics and fluids:** Fluid Mechanics with Lab; Aerodynamics with Lab*; Intermediate Aerodynamics (AAE 514, graduate)†; Experimental Aerodynamics (AAE 520, graduate)†
-* **Propulsion and thermal:** Aerospace Propulsion Foundations*; Thermodynamics I
-* **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Control System Analysis†
-* **Design:** Introduction to Aerospace Design
-* **Mathematics:** Linear Algebra; Differential Equations; Introduction to Proof and Real Analysis; Foundations of Analysis†; Probability and Statistics in Engineering*
-* **Computing and signals:** C Programming; Signal Analysis for Aerospace Engineering*
-
 ## Research Experience
 
 **Undergraduate Researcher, Hypersonic Boundary-Layer Transition**  
@@ -78,3 +70,12 @@ Self-directed study of hypersonics beyond coursework:
 * J. D. Anderson, *Hypersonic and High-Temperature Gas Dynamics* (completed)
 * J. J. Bertin, *Hypersonic Aerothermodynamics* (completed)
 * E. H. Hirschel and C. Weiland, *Selected Aerothermodynamic Design Problems of Hypersonic Flight Vehicles* (in progress)
+
+**Relevant Coursework** (*in progress, Fall 2026; †planned, Spring 2027)
+* **Aerodynamics and fluids:** Fluid Mechanics with Lab; Aerodynamics with Lab*; Intermediate Aerodynamics (AAE 514, graduate)†; Experimental Aerodynamics (AAE 520, graduate)†
+* **Propulsion and thermal:** Aerospace Propulsion Foundations*; Thermodynamics I
+* **Structures, dynamics and controls:** Aeromechanics I and II with Lab; Structural Analysis I; Dynamics and Vibrations†; Control System Analysis†
+* **Design:** Introduction to Aerospace Design
+* **Mathematics:** Linear Algebra; Differential Equations; Introduction to Proof and Real Analysis; Foundations of Analysis†; Probability and Statistics in Engineering*
+* **Computing and signals:** C Programming; Signal Analysis for Aerospace Engineering*
+
