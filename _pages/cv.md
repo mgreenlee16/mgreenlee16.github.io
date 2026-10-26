@@ -70,6 +70,8 @@ Self-directed study of hypersonics beyond coursework:
 * J. D. Anderson, *Hypersonic and High-Temperature Gas Dynamics* (completed)
 * J. J. Bertin, *Hypersonic Aerothermodynamics* (completed)
 * E. H. Hirschel and C. Weiland, *Selected Aerothermodynamic Design Problems of Hypersonic Flight Vehicles* (in progress)
+* J. Carleone, *Tactical Missile Warheads* (in progress)
+
 
 ## Relevant Coursework  
 (*in progress, Fall 2026; †planned, Spring 2027)
